@@ -2,6 +2,12 @@
 
 ## demo
 
+calendar
+
+```html
+<iframe src="https://standardnote.github.io/widgets/demo/calendar.html" frameborder="0" height="350" width="293"></iframe>
+```
+
 calculator
 
 ```html
