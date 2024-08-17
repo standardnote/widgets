@@ -29,12 +29,12 @@ body {
     width: 100%;
     border: none;
     outline: none;
-    padding: 15px;
     resize: none;
 }
 
 #editor {
     border-right: 1px solid var(--sn-stylekit-border-color);
+    padding: 15px;
     display: none;
 }
 

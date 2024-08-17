@@ -99,9 +99,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
         if (html.slice(0,5).toLowerCase() !== '<html') {
           html = `<html><head><meta charset="utf-8"></head><body>${html}</body></html>`
         }
-        bolb = new Blob([html], { type: 'text/html' })
-        container.src = URL.createObjectURL(bolb)
+        if (isRunningInMobileApplication()) {
+          container.srcdoc = html
+        } else {
+          bolb = new Blob([html], { type: 'text/html' })
+          container.src = URL.createObjectURL(bolb)
+          // bolb = encodeURIComponent(html)
+          // container.src = 'data:text/html;charset=utf-8,' + bolb
+        }
       }
+    }
+
+    function isRunningInMobileApplication() {
+      return cr.component.environment === 'native-mobile-web'
     }
 
     // preview split edit
