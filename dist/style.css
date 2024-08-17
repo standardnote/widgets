@@ -1,0 +1,151 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+#container,
+#editor {
+    box-sizing: border-box;
+    tab-size: 2;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-weight: inherit;
+    margin: 0;
+    font-family: var(--sn-stylekit-editor-font-family);
+    flex-grow: 1;
+    font-size: var(--sn-stylekit-font-size-editor);
+    line-height: 1.5;
+    margin-left: var(--editor-margin);
+    margin-right: var(--editor-margin);
+    max-width: var(--editor-max-width);
+    background-color: var(--sn-stylekit-editor-background-color);
+    color: var(--sn-stylekit-editor-foreground-color);
+    overflow-y: scroll;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    resize: none;
+}
+
+#editor {
+    border-right: 1px solid var(--sn-stylekit-border-color);
+    display: none;
+}
+
+#btn-edit {
+    padding: 0;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    /* font-size: 0; */
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    background-color: var(--sn-stylekit-info-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+#btn-edit:hover {
+    opacity: 1;
+}
+#btn-edit svg path {
+    fill: var(--sn-stylekit-foreground-color);
+}
+#btn-edit > svg:nth-child(1) {
+    display: none;
+    width: 33px;
+    height: 33px;
+    padding-top: 3px;
+}
+#btn-edit > svg:nth-child(2) {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+}
+
+#btn-edit.btn-submit {
+    background-color: var(--sn-stylekit-success-color);
+}
+#btn-edit.btn-submit  > svg:nth-child(1) {
+    display: inline-block;
+}
+#btn-edit.btn-submit  > svg:nth-child(2) {
+    display: none;
+}
+
+/* html */
+.full-screen {
+    box-sizing: border-box;
+    tab-size: 2;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-weight: inherit;
+    margin: 0;
+    font-family: var(--sn-stylekit-editor-font-family);
+    flex-grow: 1;
+    font-size: var(--sn-stylekit-font-size-editor);
+    line-height: 1.5;
+    margin-left: var(--editor-margin);
+    margin-right: var(--editor-margin);
+    max-width: var(--editor-max-width);
+    background-color: var(--sn-stylekit-editor-background-color);
+    color: var(--sn-stylekit-editor-foreground-color);
+    overflow-y: scroll;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    resize: none;
+}
+
+.windows-web ::-webkit-scrollbar,
+.windows-desktop ::-webkit-scrollbar,
+.linux-web ::-webkit-scrollbar,
+.linux-desktop ::-webkit-scrollbar,
+.force-custom-scrollbar ::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+    border-left: none
+}
+
+.windows-web ::-webkit-scrollbar-thumb,
+.windows-desktop ::-webkit-scrollbar-thumb,
+.linux-web ::-webkit-scrollbar-thumb,
+.linux-desktop ::-webkit-scrollbar-thumb,
+.force-custom-scrollbar ::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 10px;
+    background-color: var(--sn-stylekit-scrollbar-thumb-color);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, .05), inset 1px 1px 0px rgba(0, 0, 0, .05)
+}
+
+.windows-web ::-webkit-scrollbar-button,
+.windows-desktop ::-webkit-scrollbar-button,
+.linux-web ::-webkit-scrollbar-button,
+.linux-desktop ::-webkit-scrollbar-button,
+.force-custom-scrollbar ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none
+}
+
+.windows-web ::-webkit-scrollbar-corner,
+.windows-desktop ::-webkit-scrollbar-corner,
+.linux-web ::-webkit-scrollbar-corner,
+.linux-desktop ::-webkit-scrollbar-corner,
+.force-custom-scrollbar ::-webkit-scrollbar-corner {
+    background-color: rgba(0, 0, 0, 0)
+}

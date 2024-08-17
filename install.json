@@ -1,0 +1,19 @@
+{
+  "name": "Widgets",
+  "content_type": "SN|Component",
+  "main": "dist/index.html",
+  "area": "editor-editor",
+  "spellcheckControl": false,
+  "note_type": "code",
+  "file_type": "json",
+  "showInGallery": true,
+  "identifier": "com.sncommunity.widgets",
+  "version": "1.0.0",
+  "url": "https://standardnote.github.io/widgets/dist/index.html",
+  "download_url": "https://standardnote.github.io/widgets/dist.zip",
+  "latest_url": "https://standardnote.github.io/widgets/install.json",
+  "publisher": "@ixiumu",
+  "description": "Standard Notes Widgets",
+  "base64Hash": "",
+  "binaryHash": ""
+}
